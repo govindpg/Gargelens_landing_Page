@@ -1,0 +1,150 @@
+body {font-family: "Lato", sans-serif;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgcreated {
+  background-image: url("bgimg.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rotate {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.mySlides {display: none}
+
+
+.logo-rot {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo-rot img{
+  max-height: 80px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered img{
+  max-height: 80px;
+}
+.quote {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quote p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  }
+
+.placeLink{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 900px) {
+  .centered img{
+    max-height: 60px;
+  }
+  .logo-rot img{
+  max-height: 60px;
+}
+  .quote p {
+  font-size: 14px;
+  text-align: center;
+  }
+  .placeLink a{
+    font-size: 16px;
+  }
+
+  .centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .logo-rot {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .placeLink{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .quote {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+}
+.topButton{
+    float: none;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    border: 2px solid #4CAF50;
+    transition-duration: 0.4s;
+    background-color: inherit;
+    color: #ffffff;
+}
+
+
+.topButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.topButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.topButton:hover span {
+  padding-right: 25px;
+}
+
+.topButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ 
